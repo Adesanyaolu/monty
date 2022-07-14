@@ -1,7 +1,7 @@
 #ifndef MONTY_H
 #define MONTY_H
-#include <stddef.h>
 
+#include <stddef.h>
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -11,7 +11,6 @@
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
  */
-
 typedef struct stack_s
 {
 	int n;
@@ -27,7 +26,6 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
  */
-
 typedef struct instruction_s
 {
 	char *opcode;
@@ -59,7 +57,6 @@ typedef struct instruction_s
 *
 * Description: global structure used to pass data around the functions easily
 */
-
 typedef struct help
 {
 	int data_struct;
@@ -68,6 +65,7 @@ typedef struct help
 help global;
 
 extern int status;
+
 void push(stack_t **stack, unsigned int line_cnt);
 void pall(stack_t **stack, unsigned int line_cnt);
 void pint(stack_t **stack, unsigned int line_cnt);
@@ -84,6 +82,7 @@ void pstr(stack_t **stack, unsigned int line_cnt);
 void rotl(stack_t **stack, unsigned int line_count);
 void rotr(stack_t **stack, unsigned int line_count);
 void opcode(stack_t **stack, char *str, unsigned int line_cnt);
+
 int is_digit(char *string);
 int isnumber(char *str);
 
